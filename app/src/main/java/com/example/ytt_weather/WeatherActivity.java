@@ -94,6 +94,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         //从本地缓存中读取天气数据
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+
         String weatherString = prefs.getString("weather",null);
         final String weatherId;
         if(weatherString != null){
