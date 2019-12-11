@@ -33,6 +33,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:fitsSystemWindows="true">
+                    <!--fitsSystemWindows为状态栏留出空间-->
 
                     <include layout="@layout/title"/>
                     <include layout="@layout/now"/>
