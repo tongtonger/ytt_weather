@@ -11,7 +11,7 @@ import org.json.JSONObject;
 import com.example.ytt_weather.db.City;
 import com.example.ytt_weather.db.County;
 import com.example.ytt_weather.db.Province;
-//import com.example.ytt_weather.gson.Weather;
+import com.example.ytt_weather.gson.Weather;
 public class Utility {
     /**
      *
@@ -82,16 +82,24 @@ public class Utility {
         return false;
     }
 
- /*   public static Weather handleWeatherResponse(String response){
+    /**
+     * 将JSON数据解析为Weather实体类
+     * @param response
+     * @return
+     */
+   public static Weather handleWeatherResponse(String response){
         try{
+            //通过JSONObject和JSONArray将天气数据的主体内容解析
             JSONObject jsonObject = new JSONObject(response);
             JSONArray jsonArray = jsonObject.getJSONArray("HeWeather");
+
             String weatherContent = jsonArray.getJSONObject(0).toString();
+
+            //调用fromJson转换为Weather对象
             return new Gson().fromJson(weatherContent, Weather.class);
         }catch (Exception e){
             e.printStackTrace();
         }
         return null;
     }
-*/
 }
