@@ -164,7 +164,7 @@ public class WeatherActivity extends AppCompatActivity {
         HttpUtil.sendOkHttpRequest(weatherUrl, new Callback() {
             @Override
             public void onFailure(Call call, IOException e) {
-                Toast.makeText(WeatherActivity.this , "获取天气信息失败fai", Toast.LENGTH_SHORT).show();
+                Toast.makeText(WeatherActivity.this , "获取天气信息失败", Toast.LENGTH_SHORT).show();
                 swipeRefresh.setRefreshing(false);
             }
             @Override

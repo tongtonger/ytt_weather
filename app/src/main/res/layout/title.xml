@@ -24,6 +24,7 @@
         android:textColor="#fff"
         android:textSize="16sp"/>
 
+    <!--切换城市的按钮，居左显示-->
     <Button
         android:layout_width="30dp"
         android:layout_height="30dp"
