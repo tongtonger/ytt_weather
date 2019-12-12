@@ -15,6 +15,7 @@
             android:id="@+id/bing_pic_img"
             android:scaleType="centerCrop"/>
 
+        <!--下拉刷新-->
         <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
