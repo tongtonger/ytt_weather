@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
 
-    <!--DrawerLayou滑动菜单-->
+    <!--DrawerLayou滑动菜单，将下面的天气显示作为主屏幕的内容，第二个控件为遍历省市县的碎片-->
     <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawer_layout"
         android:layout_height="match_parent"

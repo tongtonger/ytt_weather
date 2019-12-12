@@ -38,8 +38,9 @@ import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
 
-    public DrawerLayout drawerLayout;
-    private Button navButton;
+    public DrawerLayout drawerLayout;//滑动菜单显示省市县
+    private Button navButton;//点击切换城市
+
     private ImageView bingPicImg;//背景图
     public SwipeRefreshLayout swipeRefresh;
     private ScrollView weatherLayout;
@@ -93,7 +94,7 @@ public class WeatherActivity extends AppCompatActivity {
         navButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.openDrawer(GravityCompat.START);
+                drawerLayout.openDrawer(GravityCompat.START);//打开滑动菜单
             }
         });
 
