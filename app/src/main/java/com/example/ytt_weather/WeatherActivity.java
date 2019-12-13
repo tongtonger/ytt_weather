@@ -42,7 +42,8 @@ public class WeatherActivity extends AppCompatActivity {
     private Button navButton;//点击切换城市
 
     private ImageView bingPicImg;//背景图
-    public SwipeRefreshLayout swipeRefresh;
+    public SwipeRefreshLayout swipeRefresh;//下拉刷新
+
     private ScrollView weatherLayout;
     private TextView titleCity;
     private TextView titleUpdateTime;
