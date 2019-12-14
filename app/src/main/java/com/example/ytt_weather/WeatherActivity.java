@@ -26,7 +26,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.ytt_weather.gson.Forecast;
 import com.example.ytt_weather.gson.Weather;
-//import com.example.ytt_weather.service.AutoUpdateService;
+import com.example.ytt_weather.service.AutoUpdateService;
 import com.example.ytt_weather.util.HttpUtil;
 import com.example.ytt_weather.util.Utility;
 
@@ -233,9 +233,11 @@ public class WeatherActivity extends AppCompatActivity {
         comfortText.setText(comfort);
         carWashText.setText(carWash);
         sportText.setText(sport);
+
         weatherLayout.setVisibility(View.VISIBLE);
-       // Intent intent = new Intent(this, AutoUpdateService.class);
-       // startService(intent);
+
+        Intent intent = new Intent(this, AutoUpdateService.class);//启动自动更新服务
+        startService(intent);
 
     }
 
